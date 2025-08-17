@@ -1,6 +1,7 @@
 import React from 'react';
-import './styles/main.css'; // Adjust this path if necessary
-import ExperienceCard from './components/ExperienceCard'; // Import your component
+import './styles/main.css'; 
+import ExperienceCardList from './sections/ExperienceCardList';
+import experienceData from './data/experienceData';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           <div>
             <img
               className="photo"
-              src="./assets/square-headshot.png"
+              src="../public/assets/square-headshot.png"
               alt="Analise Erlbacher"
             />
           </div>
@@ -51,12 +52,7 @@ function App() {
             emphasis in Entrepreneurship.
           </p>
           {/* Use your React component for each work experience */}
-          <ExperienceCard
-            expTitle="Title"
-            expStart="111"
-            expEnd="222"
-            expDescription="description"
-          />
+          <ExperienceCardList experiences={experienceData} />
           {/* Add more ExperienceCard components here */}
         </section>
         <section id="projects">

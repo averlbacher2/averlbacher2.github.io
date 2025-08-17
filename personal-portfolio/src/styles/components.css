@@ -9,6 +9,11 @@
     box-shadow: 0 8px 10px 0 var(--khaki);
 }
 
+.justify-between-dates {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav a:hover {
     color: var(--columbia-blue);
 }

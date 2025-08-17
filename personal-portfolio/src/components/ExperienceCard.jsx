@@ -9,12 +9,14 @@ export default function ExperienceCard({
     return (
         <div className="experience-card">
             <h2>{expTitle}</h2>
-            {expStart && (
-                <p>{expStart}</p>
-            )}
-            {expEnd && (
-                <p>{expEnd}</p>
-            )}
+            <div className="justify-between-dates">
+                {expStart && (
+                    <p>{expStart}</p>
+                )}
+                {expEnd && (
+                    <p>{expEnd}</p>
+                )}
+            </div>
             <p>{expDescription}</p>
         </div>
     )
