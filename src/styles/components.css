@@ -1,5 +1,12 @@
+@import 'variables.css';
+
 .experience-card {
-    border: 1px solid whitesmoke;
+    background-color: var(--white);
+    border: 1px solid var(--raisin-black);
+    padding: 1.5rem;
+    margin: 1em;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 10px 0 var(--khaki);
 }
 
 nav a:hover {
