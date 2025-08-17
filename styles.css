@@ -1,0 +1,100 @@
+@import './variables.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--raisin-black);
+}
+
+section {
+    padding: 60px 0;
+    border-bottom: 2px solid var(--khaki);
+}
+
+nav {
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    padding-left: 4rem;
+    padding-right:4rem;
+    padding-top: 4rem;
+    transition-duration: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--columbia-blue);
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.photo {
+    width: 16rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.about-section ul {
+    list-style-type: circle;
+}
+
+/* Text Styles */
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    text-align: center;
+    color: var(--raisin-black);
+}
+
+a {
+    color: var(--cadet-gray);
+}
+
+.emphasis-text {
+    font-size: 1.25em;
+    color: var(--cadet-gray);
+    line-height: 2rem;
+}
+
+.subheading {
+    font-size: 1em;
+    color: var(--cadet-gray);
+    text-transform: uppercase;
+    line-height: 2rem;
+}
