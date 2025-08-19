@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/main.css'; 
 import ExperienceCardList from './sections/ExperienceCardList';
 import experienceData from './data/experienceData';
+import ExperienceTimeline from './sections/ExperienceTimeline';
 
 function App() {
   return (
@@ -52,7 +53,7 @@ function App() {
             emphasis in Entrepreneurship.
           </p>
           {/* Use your React component for each work experience */}
-          <ExperienceCardList experiences={experienceData} />
+          <ExperienceTimeline experiences={experienceData} />
           {/* Add more ExperienceCard components here */}
         </section>
         <section id="projects">

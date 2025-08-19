@@ -2,6 +2,7 @@ import "../styles/main.css";
 import React from "react";
 
 export default function ExperienceCard({
+    expId,
   expTitle,
   expCompany,
   expStart,
@@ -9,7 +10,7 @@ export default function ExperienceCard({
   expDescription,
 }) {
   return (
-    <div className="experience-card">
+    <div className="experience-card" key={expId}>
       <h2>{expTitle}</h2>
       <div className="experience-card-details">
         <div>{expCompany}</div>
@@ -20,8 +21,8 @@ export default function ExperienceCard({
         </div>
       </div>
       <ul>
-        {expDescription.map((line, index) => (
-          <li key={index}>{line}</li>
+        {expDescription.map((line, idx) => (
+          <li key={idx}>{line}</li>
         ))}
       </ul>
     </div>

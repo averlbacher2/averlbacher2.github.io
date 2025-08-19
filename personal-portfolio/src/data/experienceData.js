@@ -1,5 +1,6 @@
 const experienceData = [
     {
+        id: 1,
         title: "Software Quality Analyst Intern",
         company: "Hudl",
         startDate: "May, 2025",
@@ -11,6 +12,7 @@ const experienceData = [
     },
 
     {
+        id: 2, 
         title: "Innovation Processes and Design Thinking Teaching Assistant",
         company: "University of Nebraska-Lincoln",
         startDate: "August 2025",
@@ -23,6 +25,7 @@ const experienceData = [
     },
 
     {
+        id: 3,
         title: "Computer Systems and Administration Worker",
         company: "RXSolutions Compounding Pharmacy",
         startDate: "April 2020",

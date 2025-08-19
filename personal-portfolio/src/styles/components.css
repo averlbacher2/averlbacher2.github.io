@@ -29,6 +29,14 @@
     padding-left: 2em;
 }
 
+.timeline-container {
+    /* TODO */
+}
+
+.timeline-line {
+    border: 1px solid var(--raisin-black);
+}
+
 nav a:hover {
     color: var(--columbia-blue);
 }
