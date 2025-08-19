@@ -7,6 +7,7 @@ export default function ExperienceCardList({ experiences }) {
                 <ExperienceCard 
                     key={index}
                     expTitle={experience.title}
+                    expCompany={experience.company}
                     expStart={experience.startDate}
                     expEnd={experience.endDate}
                     expDescription={experience.description}

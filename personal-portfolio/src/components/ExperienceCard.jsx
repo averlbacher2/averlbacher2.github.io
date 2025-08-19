@@ -1,23 +1,29 @@
-import '../styles/main.css';
+import "../styles/main.css";
+import React from "react";
 
 export default function ExperienceCard({
-    expTitle,
-    expStart,
-    expEnd,
-    expDescription
+  expTitle,
+  expCompany,
+  expStart,
+  expEnd,
+  expDescription,
 }) {
-    return (
-        <div className="experience-card">
-            <h2>{expTitle}</h2>
-            <div className="justify-between-dates">
-                {expStart && (
-                    <p>{expStart}</p>
-                )}
-                {expEnd && (
-                    <p>{expEnd}</p>
-                )}
-            </div>
-            <p>{expDescription}</p>
+  return (
+    <div className="experience-card">
+      <h2>{expTitle}</h2>
+      <div className="experience-card-details">
+        <div>{expCompany}</div>
+        <div className="experience-card-dates">
+            {expStart && <p>{expStart}</p>}
+            <p>--</p>
+            {expEnd && <p>{expEnd}</p>}
         </div>
-    )
+      </div>
+      <ul>
+        {expDescription.map((line, index) => (
+          <li key={index}>{line}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
