@@ -13,7 +13,7 @@ export default function ExperienceCard({
     <div className="experience-card" key={expId}>
       <h2>{expTitle}</h2>
       <div className="experience-card-details">
-        <div>{expCompany}</div>
+        <div className="experience-card-company">{expCompany}</div>
         <div className="experience-card-dates">
             {expStart && <p>{expStart}</p>}
             <p>--</p>

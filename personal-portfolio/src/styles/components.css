@@ -10,18 +10,33 @@
     box-shadow: 0 8px 10px 0 var(--khaki);
 }
 
+.experience-thumbnails :hover{
+    color: var(--persian-green);
+}
+
+.experience-card-company {
+    max-width: 50%;
+    display: flex;
+    width: fit-content;
+    font-style: italic;
+}
+
 .experience-card-dates {
     display: flex;
-    width: 25%;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: fit-content;
+    gap: 6px;
 }
 
 .experience-card-details {
     display: flex;
     justify-content: space-between;
-    width: full;
     align-items: center;
+    gap: 10px;
 }
 
 .experience-card ul {
@@ -29,12 +44,21 @@
     padding-left: 2em;
 }
 
-.timeline-container {
-    /* TODO */
+.experiences-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
 }
 
-.timeline-line {
-    border: 1px solid var(--raisin-black);
+.experiences-expanded {
+    display: flex;
+    width: 60%;
+}
+
+.experience-thumbnails {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 nav a:hover {

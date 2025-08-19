@@ -3,28 +3,27 @@ import experienceData from "../data/experienceData";
 import ExperienceCard from "../components/ExperienceCard";
 
 
-export default function ExperienceTimeline({ experiences }) {
-  const [selectedExperienceId, setSelectedExperienceId] = useState(null);
+export default function ExperiencesContainer({ experiences }) {
+  const [selectedExperienceId, setSelectedExperienceId] = useState(1);
     const selectedExperience = experienceData.find( (exp) => exp.id ===
       selectedExperienceId);
   return (
-    <div className="timeline-container">
-      <div className="timeline-line"></div>
-      <div className="timeline-points">
+    <div className="experiences-container">
+      <div className="experience-thumbnails">
         {/* Thumbnails here */}
         {experiences.map((experience) => {
           return (
-            <div
+            <h3
               key={experience.id}
-              className="experience-card"
+              className="experience-card experience-card-thumbnail"
               onClick={() => setSelectedExperienceId(experience.id)}
             >
               {experience.title}
-            </div>
+            </h3>
           );
         })}
       </div>
-      
+      <div className="experiences-expanded">
       {selectedExperience && (
         <ExperienceCard
           key={selectedExperience.id}
@@ -36,6 +35,7 @@ export default function ExperienceTimeline({ experiences }) {
           expDescription={selectedExperience.description}
         />
       )}
+      </div>
     </div>
   );
 }
