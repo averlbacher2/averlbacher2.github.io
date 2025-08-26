@@ -1,5 +1,45 @@
 @import 'variables.css';
 
+nav a:hover {
+    color: var(--columbia-blue);
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.photo {
+    width: 16rem;
+    height: auto;
+    overflow: hidden;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.about-section ul {
+    list-style-type: circle;
+}
+
+/* Text Styles */
+.emphasis-text {
+    font-size: 1.25em;
+    color: var(--cadet-gray);
+    line-height: 2rem;
+}
+
+.subheading {
+    font-size: 1em;
+    color: var(--cadet-gray);
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
 /* Experience Card styling */
 .experience-card {
     background-color: var(--white);
@@ -66,42 +106,26 @@
     width: 30%;
 }
 
-nav a:hover {
-    color: var(--columbia-blue);
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    padding: 20px;
-}
-
-.photo {
-    width: 16rem;
-    height: auto;
+/* Project Card Styling */
+.project-card {
+    background: var(--white);
+    border: 1px solid rgba(130, 138, 145, 0.2);
+    border-radius: 12px;
     overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
 }
 
-.about-section {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+.project-dates {
+
 }
 
-.about-section ul {
-    list-style-type: circle;
+.project-description {
+
 }
 
-/* Text Styles */
-.emphasis-text {
-    font-size: 1.25em;
-    color: var(--cadet-gray);
-    line-height: 2rem;
+.project-skill-tag {
+    
 }
 
-.subheading {
-    font-size: 1em;
-    color: var(--cadet-gray);
-    text-transform: uppercase;
-    line-height: 2rem;
-}
