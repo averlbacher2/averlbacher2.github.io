@@ -4,6 +4,7 @@
 .experience-card {
     background-color: var(--white);
     border: 1px solid var(--raisin-black);
+    border-radius: 10px;
     padding: 1.5rem;
     margin: 1em;
     backdrop-filter: blur(10px);
@@ -39,10 +40,14 @@
     gap: 10px;
 }
 
+.experience-card-thumbnail {
+    cursor: pointer;
+}
+
 .experience-card ul {
     list-style-type: circle;
-    padding-left: 2em;
 }
+
 
 .experiences-container {
     display: flex;
