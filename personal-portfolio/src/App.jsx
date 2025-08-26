@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/main.css'; 
 import experienceData from './data/experienceData';
 import ExperiencesContainer from './sections/ExperiencesContainer';
+import projectData from './data/projectData';
+import ProjectsContainer from './sections/ProjectsContainer';
 
 function App() {
   return (
@@ -57,6 +59,7 @@ function App() {
         </section>
         <section id="projects">
           <h2>Projects</h2>
+          <ProjectsContainer projects={projectData} />
         </section>
         <section id="skills">
           <h2>Skills</h2>

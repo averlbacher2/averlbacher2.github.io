@@ -8,3 +8,5 @@ const projectData = [
         skills: ["React", "Vite", "JavaScript", "CSS", "HTML", "GitHub"]
     }
 ]
+
+export default projectData;

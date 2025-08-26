@@ -107,14 +107,16 @@ nav a:hover {
 }
 
 /* Project Card Styling */
-.project-card {
-    background: var(--white);
-    border: 1px solid rgba(130, 138, 145, 0.2);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    position: relative;
+.projects-container {
+
+}
+
+.project-card-collapsed {
+
+}
+
+.projects-expanded {
+
 }
 
 .project-dates {
@@ -126,6 +128,27 @@ nav a:hover {
 }
 
 .project-skill-tag {
-    
+
+}
+
+.project-image {
+
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid rgba(130, 138, 145, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    padding: 1.5rem;
+    margin: 1em;
+    backdrop-filter: blur(10px);
+}
+
+.project-card-title {
+
 }
 
