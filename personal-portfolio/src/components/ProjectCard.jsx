@@ -1,25 +1,46 @@
 import '../styles/main.css';
+import { useState } from 'react';
 
 export default function ProjectCard({
     projectId,
     name,
     startDate,
     endDate,
-    description,
+    descriptionSnippet,
+    descriptionFull,
     skills,
     projectImage
 }) {
+    const [isExpanded, setIsExpanded] = useState(false);
     return (
         <div className="project-card" key={projectId}>
-            <h2>{name}</h2>
-            <div className="project-dates">{startDate} &#149; {endDate}</div>
-            <p className="project-description">{description}</p>
-            {
-                skills.map((skill, index) => {
-                    <span key={index} className="project-skill-tag">
-                        {skill}
-                    </span>
-                })
+            <div className="project-card-collapsed"
+                onClick={() => setIsExpanded(!isExpanded)}>
+                <h2>{name}</h2>
+                <div className="project-dates">{startDate} &#149; {endDate}</div>
+                <p className="project-description">{descriptionSnippet}</p>
+            </div>
+            {isExpanded && 
+                <div>
+                    {/* Render full description text */}
+                    <p className="project-description">{descriptionFull}</p>
+                    {/* Render all skill tags provided */}
+                    <div className="skills-container">
+                        {skills.map((skill, index) => {
+                            return (
+                            <span key={index} className="project-skill-tag">
+                                {skill}
+                            </span>
+                            );
+                        })}
+                    </div>
+                    {/* Only render image if there is one */}
+                    {projectImage && (
+                        <div>
+                            <img src={projectImage} alt={`Image for ${name}`} className="project-image" />
+                        </div> 
+                    )}
+                </div>
             }
             <button>View on GitHub</button>
         </div>
