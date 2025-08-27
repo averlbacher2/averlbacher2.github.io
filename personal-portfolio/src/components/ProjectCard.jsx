@@ -17,13 +17,21 @@ export default function ProjectCard({
             <div className="project-card-collapsed"
                 onClick={() => setIsExpanded(!isExpanded)}>
                 <h2>{name}</h2>
-                <div className="project-dates">{startDate} &#149; {endDate}</div>
+                <div className="project-dates">{startDate} | {endDate}</div>
                 <p className="project-description">{descriptionSnippet}</p>
             </div>
             {isExpanded && 
                 <div>
                     {/* Render full description text */}
-                    <p className="project-description">{descriptionFull}</p>
+                    <div className="project-description">
+                        {descriptionFull.map((line, index) => {
+                            return (
+                                <ul>
+                                    <li key={index} className="project-description-full">{line}</li>
+                                </ul>
+                            );
+                        })}
+                    </div>
                     {/* Render all skill tags provided */}
                     <div className="skills-container">
                         {skills.map((skill, index) => {
