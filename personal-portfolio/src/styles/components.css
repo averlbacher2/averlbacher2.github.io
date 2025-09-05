@@ -108,7 +108,10 @@ nav a:hover {
 
 /* Project Card Styling */
 .projects-container {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card-collapsed {
@@ -116,19 +119,28 @@ nav a:hover {
 }
 
 .projects-expanded {
-
+    margin: 1rem;
 }
 
 .project-dates {
-
+    font-size: 0.9rem;
+    color: var(--cadet-gray);
+    margin-bottom: 1rem;
 }
 
 .project-description {
-
+    color: var(--raisin-black);
+    line-height: 1.6;
 }
 
 .project-skill-tag {
-
+    padding: 0.4rem 0.8rem;
+    background: var(--columbia-blue);
+    color: var(--charcoal);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0.5em;
 }
 
 .project-image {
@@ -148,7 +160,18 @@ nav a:hover {
     backdrop-filter: blur(10px);
 }
 
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(38, 70, 83, 0.1);
+    border-color: var(--persian-green);
+}
+
+
 .project-card-title {
 
 }
 
+.github-link {
+    background: var(--raisin-black);
+    color: var(--white);
+}

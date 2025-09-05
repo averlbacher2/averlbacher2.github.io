@@ -20,7 +20,17 @@ export default function ProjectCard({
                 <div className="project-dates">{startDate} | {endDate}</div>
                 <p className="project-description">{descriptionSnippet}</p>
             </div>
-            {isExpanded && 
+            {/* Render all skill tags provided */}
+            <div className="skills-container">
+                {skills.map((skill, index) => {
+                    return (
+                        <span key={index} className="project-skill-tag">
+                            {skill}
+                        </span>
+                    );
+                })}
+            </div>
+            {isExpanded &&
                 <div>
                     {/* Render full description text */}
                     <div className="project-description">
@@ -32,25 +42,15 @@ export default function ProjectCard({
                             );
                         })}
                     </div>
-                    {/* Render all skill tags provided */}
-                    <div className="skills-container">
-                        {skills.map((skill, index) => {
-                            return (
-                            <span key={index} className="project-skill-tag">
-                                {skill}
-                            </span>
-                            );
-                        })}
-                    </div>
                     {/* Only render image if there is one */}
                     {projectImage && (
                         <div>
                             <img src={projectImage} alt={`Image for ${name}`} className="project-image" />
-                        </div> 
+                        </div>
                     )}
                 </div>
             }
-            <button>View on GitHub</button>
+            <button class="github-link">View on GitHub</button>
         </div>
     );
 }
