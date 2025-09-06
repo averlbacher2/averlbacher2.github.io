@@ -5,7 +5,6 @@
 --sandy-brown: #f4a261ff;
 --burnt-sienna: #e76f51ff;
 
---white: #ffffff;
 --raisin-black: #312927ff;
 --columbia-blue: #D5EAF8ff;
 --khaki: #A99F97ff;
@@ -13,11 +12,14 @@
 --cadet-gray: rgb(130, 138, 145);
 --subtle-gray: rgba(130, 138, 145, 0.2);
 
---background-color: #f9feff;
+--background-color: var(--oxford-blue);
 
 --oxford-blue: #0a1128ff;
+--light-oxford-blue: #1f2a4a;
 --bittersweet: #ed6a5aff;
 --indigo-dye: #034078ff;
 --turquoise: #41ead4ff;
 --white: #fefcfbff;
+
+--primary-text: #E6E6FA;
 }

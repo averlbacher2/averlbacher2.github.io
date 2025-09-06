@@ -1,9 +1,5 @@
 @import 'variables.css';
 
-nav a:hover {
-    color: var(--columbia-blue);
-}
-
 .container {
     max-width: 960px;
     margin: auto;
@@ -42,9 +38,9 @@ nav a:hover {
 
 /* Experience Card styling */
 .experience-card {
-    background-color: var(--white);
     border: 1px solid var(--persian-green);
     border-radius: 12px;
+    background-color: var(--light-oxford-blue);
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -52,6 +48,13 @@ nav a:hover {
     padding: 1.5rem;
     margin: 1em;
     backdrop-filter: blur(10px);
+}
+
+.experience-card-thumbnail {
+    color: var(--primary-text);
+    background-color: var(--oxford-blue);
+    border: 1px solid var(--subtle-gray);
+    cursor: pointer;
 }
 
 .experience-thumbnails :hover {
@@ -84,12 +87,6 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-}
-
-.experience-card-thumbnail {
-    background-color: white;
-    border: 1px solid var(--subtle-gray);
-    cursor: pointer;
 }
 
 .experience-card ul {
@@ -137,7 +134,6 @@ nav a:hover {
 }
 
 .project-description {
-    color: var(--raisin-black);
     line-height: 1.6;
 }
 
@@ -154,7 +150,6 @@ nav a:hover {
 .project-image {}
 
 .project-card {
-    background: var(--white);
     border: 1px solid rgba(130, 138, 145, 0.2);
     border-radius: 12px;
     overflow: hidden;
@@ -195,7 +190,6 @@ nav a:hover {
     justify-content: center;
     transition: all 0.3s ease;
     font-size: 0.8rem;
-    color: var(--cadet-gray);
 }
 
 .expand-indicator.expanded {

@@ -3,7 +3,7 @@ h1 {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-align: center;
-    color: var(--raisin-black);
+    color: var(--turquoise);
 }
 
 a {
@@ -14,7 +14,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 2;
     background-color: var(--background-color);
-    color: var(--raisin-black);
+    color: var(--primary-text);
 }
 
 section {
@@ -49,4 +49,8 @@ nav a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--turquoise);
 }
