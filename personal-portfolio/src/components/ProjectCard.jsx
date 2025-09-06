@@ -14,9 +14,12 @@ export default function ProjectCard({
     const [isExpanded, setIsExpanded] = useState(false);
     return (
         <div className="project-card" key={projectId}>
+            <div className="card-header">
+                <div className={`expand-indicator ${isExpanded ? 'expanded' : ''}`}>↓</div>
+            </div>
             <div className="project-card-collapsed"
                 onClick={() => setIsExpanded(!isExpanded)}>
-                <h2>{name}</h2>
+                <h2 className="project-card-title">{name}</h2>
                 <div className="project-dates">{startDate} | {endDate}</div>
                 <p className="project-description">{descriptionSnippet}</p>
             </div>
@@ -31,7 +34,7 @@ export default function ProjectCard({
                 })}
             </div>
             {isExpanded &&
-                <div>
+                <div className="project-card-expanded">
                     {/* Render full description text */}
                     <div className="project-description">
                         {descriptionFull.map((line, index) => {
@@ -50,7 +53,11 @@ export default function ProjectCard({
                     )}
                 </div>
             }
-            <button class="github-link">View on GitHub</button>
+            <div className="project-links">
+                <a href="#" className="project-link github-link">
+                    View on GitHub
+                </a>
+            </div>
         </div>
     );
 }

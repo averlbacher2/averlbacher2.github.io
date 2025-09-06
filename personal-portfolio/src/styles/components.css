@@ -43,15 +43,21 @@ nav a:hover {
 /* Experience Card styling */
 .experience-card {
     background-color: var(--white);
-    border: 1px solid var(--raisin-black);
-    border-radius: 10px;
+    border: 1px solid var(--persian-green);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
     padding: 1.5rem;
     margin: 1em;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 10px 0 var(--khaki);
 }
 
-.experience-thumbnails :hover{
+.experience-thumbnails :hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(38, 70, 83, 0.1);
+    border-color: var(--persian-green);
     color: var(--persian-green);
 }
 
@@ -81,6 +87,8 @@ nav a:hover {
 }
 
 .experience-card-thumbnail {
+    background-color: white;
+    border: 1px solid var(--subtle-gray);
     cursor: pointer;
 }
 
@@ -115,10 +123,10 @@ nav a:hover {
 }
 
 .project-card-collapsed {
-
+    margin: 1rem;
 }
 
-.projects-expanded {
+.project-card-expanded {
     margin: 1rem;
 }
 
@@ -143,9 +151,7 @@ nav a:hover {
     margin: 0.5em;
 }
 
-.project-image {
-
-}
+.project-image {}
 
 .project-card {
     background: var(--white);
@@ -168,10 +174,73 @@ nav a:hover {
 
 
 .project-card-title {
-
+    border-bottom: 1px solid rgba(130, 138, 145, 0.1);
 }
 
 .github-link {
     background: var(--raisin-black);
     color: var(--white);
+}
+
+.expand-indicator {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: rgba(130, 138, 145, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    color: var(--cadet-gray);
+}
+
+.expand-indicator.expanded {
+    transform: rotate(180deg);
+    background: var(--persian-green);
+    color: var(--white);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.github-link {
+    background: var(--persian-green);
+    color: var(--white);
+}
+
+.github-link:hover {
+    background: var(--charcoal);
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-section {
+        padding: 2rem 1rem;
+    }
 }
