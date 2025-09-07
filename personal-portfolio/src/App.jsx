@@ -57,8 +57,11 @@ function App() {
         </section>
         <section id="projects">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <h2>Projects</h2>
 =======
+=======
+>>>>>>> Stashed changes
           <h2 className="section-heading">Projects</h2>
           <ProjectsContainer projects={projectData} />
 >>>>>>> Stashed changes
