@@ -12,5 +12,21 @@
 --black: #000000ff;
 --cadet-gray: rgb(130, 138, 145);
 
+<<<<<<< Updated upstream
 --background-color: #f9feff;
+=======
+--background-color: var(--oxford-blue);
+
+--oxford-blue: #0a1128ff;
+--light-oxford-blue: #1f2a4a;
+--bittersweet: #ed6a5aff;
+--indigo-dye: #034078ff;
+--turquoise: #41ead4ff;
+--white: #fefcfbff;
+--lavender: #E6E6FA;
+--dark-lavender: #B0B0C4;
+
+--primary-text: #E6E6FA;
+--subtle-text: #B0B0C4;
+>>>>>>> Stashed changes
 }
