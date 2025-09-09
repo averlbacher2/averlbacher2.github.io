@@ -3,18 +3,18 @@ h1 {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     text-align: center;
-    color: var(--raisin-black);
+    color: var(--lavender);
 }
 
 a {
-    color: var(--cadet-gray);
+    color: var(--turquoise);
 }
 
 body {
     font-family: 'Inter', sans-serif;
     line-height: 2;
     background-color: var(--background-color);
-    color: var(--raisin-black);
+    color: var(--lavender);
 }
 
 section {
@@ -51,6 +51,7 @@ nav a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
+    color: var(--lavender);
 }
 
 nav a:hover {

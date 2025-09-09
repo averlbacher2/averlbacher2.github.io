@@ -1,71 +1,5 @@
 @import 'variables.css';
 
-/* Experience Card styling */
-.experience-card {
-    background-color: var(--white);
-    border: 1px solid var(--raisin-black);
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin: 1em;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 10px 0 var(--khaki);
-}
-
-.experience-thumbnails :hover{
-    color: var(--persian-green);
-}
-
-.experience-card-company {
-    max-width: 50%;
-    display: flex;
-    width: fit-content;
-    font-style: italic;
-}
-
-.experience-card-dates {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    width: fit-content;
-    gap: 6px;
-}
-
-.experience-card-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.experience-card-thumbnail {
-    cursor: pointer;
-}
-
-.experience-card ul {
-    list-style-type: circle;
-}
-
-
-.experiences-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.experiences-expanded {
-    display: flex;
-    width: 60%;
-}
-
-.experience-thumbnails {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
 nav a:hover {
     color: var(--columbia-blue);
 }
@@ -101,7 +35,7 @@ nav a:hover {
 
 .subheading {
     font-size: 1em;
-    color: var(--cadet-gray);
+    color: var(--lavender);
     text-transform: uppercase;
     line-height: 2rem;
 }
@@ -139,13 +73,13 @@ nav a:hover {
 .experience-card-thumbnail {
     color: var(--subtle-text);
     background-color: var(--oxford-blue);
-    border: 1px solid var(--subtle-gray);
+    border: 1px solid var(--cadet-gray-translucent);
     cursor: pointer;
 }
 
 .experience-thumbnails :hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(38, 70, 83, 0.1);
+    box-shadow: 0 20px 40px var(--cadet-gray-translucent);
     border-color: var(--persian-green);
     color: var(--persian-green);
     background-color: var(--light-oxford-blue);
@@ -237,7 +171,7 @@ nav a:hover {
 .project-image {}
 
 .project-card {
-    border: 1px solid rgba(130, 138, 145, 0.2);
+    border: 1px solid var(--cadet-gray-translucent);
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -250,18 +184,12 @@ nav a:hover {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(38, 70, 83, 0.1);
+    box-shadow: 0 20px 40px var(--cadet-gray-translucent);
     border-color: var(--persian-green);
 }
 
-
 .project-card-title {
-    border-bottom: 1px solid rgba(130, 138, 145, 0.1);
-}
-
-.github-link {
-    background: var(--raisin-black);
-    color: var(--white);
+    border-bottom: 1px solid var(--cadet-gray-translucent);
 }
 
 .expand-indicator {
@@ -271,7 +199,7 @@ nav a:hover {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: rgba(130, 138, 145, 0.1);
+    background: var(--cadet-gray-translucent);
     display: flex;
     align-items: center;
     justify-content: center;
