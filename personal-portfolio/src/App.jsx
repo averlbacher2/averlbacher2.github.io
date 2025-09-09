@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/main.css'; 
 import experienceData from './data/experienceData';
 import ExperiencesContainer from './sections/ExperiencesContainer';
+import projectData from './data/projectData';
+import ProjectsContainer from './sections/ProjectsContainer';
 
 function App() {
   return (
