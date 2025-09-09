@@ -56,18 +56,8 @@ function App() {
           {/* Add more ExperienceCard components here */}
         </section>
         <section id="projects">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          <h2>Projects</h2>
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
           <h2 className="section-heading">Projects</h2>
           <ProjectsContainer projects={projectData} />
->>>>>>> Stashed changes
         </section>
         <section id="skills">
           <h2 className="section-heading">Skills</h2>

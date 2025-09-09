@@ -51,23 +51,8 @@ nav a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: bold;
-<<<<<<< Updated upstream
-=======
 }
 
 nav a:hover {
     color: var(--turquoise);
-}
-
-em {
-    color: var(--turquoise);
-    font-weight: bold;
-    font-style: normal;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
