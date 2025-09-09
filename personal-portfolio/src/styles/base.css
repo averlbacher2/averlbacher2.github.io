@@ -56,3 +56,9 @@ nav a {
 nav a:hover {
     color: var(--turquoise);
 }
+
+em {
+    color: var(--turquoise);
+    font-weight: bold;
+    font-style: normal;
+}
