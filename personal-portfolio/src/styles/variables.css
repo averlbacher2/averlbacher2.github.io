@@ -26,4 +26,8 @@
 
 --primary-text: #E6E6FA;
 --subtle-text: #B0B0C4;
+
+--hero-gradient: linear-gradient(135deg, var(--oxford-blue) 0%, var(--light-oxford-blue) 50%, var(--indigo-dye) 100%);
+ --shape-opacity: 0.1;
+  --float-duration: 6s;
 }

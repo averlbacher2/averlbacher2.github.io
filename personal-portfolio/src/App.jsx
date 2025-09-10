@@ -4,6 +4,7 @@ import experienceData from './data/experienceData';
 import ExperiencesContainer from './sections/ExperiencesContainer';
 import projectData from './data/projectData';
 import ProjectsContainer from './sections/ProjectsContainer';
+import GeometricBackground from './components/GeometricBackground';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           </ul>
         </nav>
       </header>
-
+    <body>
+      <GeometricBackground>
       <div className="container">
         <div className="section-header">
           <h1>Hi, I'm Analise!</h1>
@@ -76,6 +78,8 @@ function App() {
       <footer>
         {/* You can add footer content here, like contact information or copyright */}
       </footer>
+      </GeometricBackground>
+      </body>
     </>
   );
 }
