@@ -4,9 +4,29 @@ nav a:hover {
     color: var(--columbia-blue);
 }
 
+/* --- GeometricBackground Positioning --- */
+.hero-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    pointer-events: none;
+    min-height: 100vh;
+    background: var(--hero-gradient);
+    overflow: hidden;
+}
+
+.main-content-wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
 .container {
     max-width: 960px;
-    margin: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -41,26 +61,25 @@ nav a:hover {
 }
 
 .section-heading {
-  display: flex;
-  align-items: center; 
-  gap: 15px; 
-  white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
 }
 
-.section-heading::after { 
-  content: '';
-  display: block; 
-  width: 100%; 
-  height: 1px; 
-  background-color: #555;
-  opacity: 0.7; 
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #555;
+    opacity: 0.7;
 }
 
 /* Experience Card styling */
 .experience-card {
-    border: 1px solid var(--persian-green);
+    border: 1px solid var(--turquoise);
     border-radius: 12px;
-    /* background-color: var(--light-oxford-blue); */
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -72,7 +91,7 @@ nav a:hover {
 
 .experience-card-thumbnail {
     color: var(--subtle-text);
-    background-color: var(--oxford-blue);
+    background-color: transparent;
     border: 1px solid var(--cadet-gray-translucent);
     cursor: pointer;
 }
@@ -254,66 +273,66 @@ nav a:hover {
     }
 }
 
-
-/* Background Container */
-.hero-section {
-  min-height: 100vh;
-  background: var(--hero-gradient);
-  position: relative;
-  overflow: hidden;
-}
-
 /* Floating Shapes Container */
 .floating-shapes {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* Generic styles for ALL shapes */
 .shape {
-  position: absolute;
-  opacity: var(--shape-opacity);
-  animation: float var(--float-duration) ease-in-out infinite;
-  /* Add common transitions or other properties here */
+    position: absolute;
+    opacity: var(--shape-opacity);
+    animation: float var(--float-duration) ease-in-out infinite;
 }
 
 /* Styles for specific shape types */
 .shape.circle {
-  border-radius: 50%;
-  /* background-color will come from inline style */
+    border-radius: 50%;
 }
 
-.shape.square {
-  /* background-color will come from inline style */
-  /* transform will come from inline style if needed */
-}
+.shape.square {}
 
 .shape.triangle {
-  /* If you have triangles, their base CSS will go here */
-  width: 0;
-  height: 0;
-  border-left: calc(var(--shape-size) / 2) solid transparent;
-  border-right: calc(var(--shape-size) / 2) solid transparent;
-  border-bottom: var(--shape-size) solid var(--color); /* example */
-  background-color: transparent;
+    width: 0;
+    height: 0;
+    border-left: calc(var(--shape-size) / 2) solid transparent;
+    border-right: calc(var(--shape-size) / 2) solid transparent;
+    border-bottom: var(--shape-size) solid var(--color);
+    /* example */
+    background-color: transparent;
 }
 
 .shape.border-circle {
-  border-radius: 50%;
-  /* border-color will come from inline style */
-  background-color: transparent; /* Explicitly ensure no background */
+    border-radius: 50%;
+    background-color: transparent;
 }
 
 /* Define your @keyframes float animation here */
 @keyframes float {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(10px, -10px) rotate(15deg); }
-  50% { transform: translate(0, 10px) rotate(0deg); }
-  75% { transform: translate(-10px, -5px) rotate(-15deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(10px, -10px) rotate(15deg);
+    }
+
+    50% {
+        transform: translate(0, 10px) rotate(0deg);
+    }
+
+    75% {
+        transform: translate(-10px, -5px) rotate(-15deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
 }
