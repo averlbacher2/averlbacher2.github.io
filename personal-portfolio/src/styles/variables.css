@@ -11,13 +11,25 @@
 --khaki: #A99F97ff;
 --black: #000000ff;
 --cadet-gray: rgb(130, 138, 145);
---subtle-gray: rgba(130, 138, 145, 0.2);
+--cadet-gray-translucent: rgba(130, 138, 145, 0.2);
 
---background-color: #f9feff;
+--background-color: var(--oxford-blue);
 
 --oxford-blue: #0a1128ff;
+--light-oxford-blue: #1f2a4a;
+
 --bittersweet: #ed6a5aff;
 --indigo-dye: #034078ff;
 --turquoise: #41ead4ff;
 --white: #fefcfbff;
+--lavender: #E6E6FA;
+--dark-lavender: #B0B0C4;
+
+--primary-text: #E6E6FA;
+--subtle-text: #B0B0C4;
+
+--hero-gradient: linear-gradient(135deg, var(--oxford-blue) 0%, var(--light-oxford-blue) 50%, var(--indigo-dye) 100%);
+ --shape-opacity: 0.1;
+  --float-duration: 6s;
+
 }
