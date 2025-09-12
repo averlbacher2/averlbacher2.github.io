@@ -5,6 +5,7 @@ import ExperiencesContainer from './sections/ExperiencesContainer';
 import projectData from './data/projectData';
 import ProjectsContainer from './sections/ProjectsContainer';
 import GeometricBackground from './components/GeometricBackground';
+import InteractiveBrandName from './components/InteractiveBrandName';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <GeometricBackground />
       <header>
         <nav>
-          <p>Analise Erlbacher</p>
+          <InteractiveBrandName />
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
