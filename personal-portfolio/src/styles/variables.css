@@ -17,6 +17,7 @@
 
 --oxford-blue: #0a1128ff;
 --light-oxford-blue: #1f2a4a;
+
 --bittersweet: #ed6a5aff;
 --indigo-dye: #034078ff;
 --turquoise: #41ead4ff;
@@ -30,4 +31,5 @@
 --hero-gradient: linear-gradient(135deg, var(--oxford-blue) 0%, var(--light-oxford-blue) 50%, var(--indigo-dye) 100%);
  --shape-opacity: 0.1;
   --float-duration: 6s;
+
 }

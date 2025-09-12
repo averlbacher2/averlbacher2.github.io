@@ -26,7 +26,7 @@ nav a:hover {
 
 .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -129,6 +129,12 @@ nav a:hover {
     gap: 10px;
 }
 
+.experience-card-thumbnail {
+    background-color: white;
+    border: 1px solid var(--subtle-gray);
+    cursor: pointer;
+}
+
 .experience-card ul {
     list-style-type: circle;
 }
@@ -174,6 +180,7 @@ nav a:hover {
 }
 
 .project-description {
+    color: var(--raisin-black);
     line-height: 1.6;
 }
 
