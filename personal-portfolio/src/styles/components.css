@@ -205,6 +205,7 @@ nav a:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px var(--cadet-gray-translucent);
     border-color: var(--persian-green);
+    background-color: var(--light-oxford-blue);
 }
 
 .project-card-title {
