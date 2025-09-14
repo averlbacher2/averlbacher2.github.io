@@ -338,42 +338,41 @@ nav a:hover {
     }
 }
 
-/* Interactive Brand Name Styles */
+/* Update these styles for the typing effect */
+
+/* Core styles */
 .brand-container {
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .brand-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--lavender);
-    position: relative;
-    display: inline-block;
-    transition: all 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--lavender);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--persian-green); /* The blinking cursor */
 }
 
-.typewriter {
-    border-right: 2px solid var(--persian-green);
-    animation: blink 1s infinite;
+/* Typing and blinking animation */
+.brand-text.typing {
+  animation: 
+    typing-animation calc(var(--char-count) * 0.1s) steps(var(--char-count), end) forwards,
+    blink 0.7s step-end infinite;
 }
 
+/* Keyframes for the typing effect (width animation) */
+@keyframes typing-animation {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Keyframes for the blinking cursor */
 @keyframes blink {
-    0%, 50% { border-color: transparent; }
-    51%, 100% { border-color: var(--persian-green); }
-}
-
-/* Update the hover animation to use a CSS variable for delay */
-.brand-text:hover .letter {
-  animation: wave 0.6s ease-in-out;
-  animation-fill-mode: both;
-  animation-delay: calc(var(--index) * 0.05s);
-}
-
-@keyframes wave {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  from, to { border-color: transparent; }
+  50% { border-color: var(--persian-green); }
 }
 
 .letter {
