@@ -6,6 +6,7 @@ import projectData from './data/projectData';
 import ProjectsContainer from './sections/ProjectsContainer';
 import GeometricBackground from './components/GeometricBackground';
 import InteractiveBrandName from './components/InteractiveBrandName';
+import SidebarNavigation from './components/SidebarNavigation';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           </ul>
         </nav>
       </header>
+
+      <SidebarNavigation />
       <div className="main-content-wrapper">
         <div className="container">
           <div className="section-header">
