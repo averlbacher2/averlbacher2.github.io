@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import '../styles/main.css';
-import InteractiveBrandName from './InteractiveBrandName';
 
 export default function SidebarNavigation() {
   const [activeSection, setActiveSection] = useState('about');
@@ -44,7 +43,6 @@ export default function SidebarNavigation() {
 
   return (
     <nav className="sidebar-nav">
-        <InteractiveBrandName brandName={"Analise Erlbacher"} />
       {sections.map((section) => (
         <div
           key={section.id}

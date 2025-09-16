@@ -13,7 +13,7 @@ function App() {
     <>
       <GeometricBackground />
       <header>
-        {/* <nav>
+        <nav>
           <InteractiveBrandName brandName="Analise Erlbacher"/>
           <ul>
             <li><a href="#about">About Me</a></li>
@@ -22,7 +22,7 @@ function App() {
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav> */}
+        </nav>
       </header>
 
       <SidebarNavigation />
