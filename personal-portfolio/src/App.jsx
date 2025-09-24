@@ -53,7 +53,7 @@ function App() {
             </div>
           </section>
           <section id="experience">
-            <InteractiveBrandName brandName={"Experience"} />
+            <h2 className="section-header">Experience</h2>
             <p>
               I am a current student at University of Nebraska-Lincoln, pursuing a
               double major in <em>Computer Science</em> and <em>Business Management</em> with an
@@ -62,18 +62,18 @@ function App() {
             <ExperiencesContainer experiences={experienceData} />
           </section>
           <section id="projects">
-            <InteractiveBrandName brandName={"Projects"} />
+            <h2 className="section-header">Projects</h2>
             <ProjectsContainer projects={projectData} />
           </section>
           <section id="skills">
-            <InteractiveBrandName brandName={"Skills"} />
+            <h2 className="section-header">Skills</h2>
             <p>
               Languages: Java, Python, Basic JavaScript, HTML, CSS Frameworks:
               React, Vite, Playwright Tools: Git, GitHub, Visual Studio Code, Figma
             </p>
           </section>
           <section id="contact">
-            <InteractiveBrandName brandName={"Contact"} />
+            <h2 className="section-header">Contact</h2>
           </section>
         </div> 
       </div> 

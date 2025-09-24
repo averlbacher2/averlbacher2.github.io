@@ -6,8 +6,9 @@ const experienceData = [
         startDate: "May, 2025",
         endDate: "August, 2025",
         description: [
-            "Developed Hudl\'s Ticketing product through active collaboration with a cross-functional squad",
-            "Worked with software engineers to rigorously test squad output and ensure UI/UX quality for users"
+            "Collaborated with a cross-functional squad on Hudl\’s fast-growing Ticketing product to refine the product roadmap, participating in daily Scrum ceremonies and tracking user stories, tasks, and defects in Jira",
+            "Engineered a full-stack testing suite, by migrating 100+ automated front-end tests to Playwright/TypeScript, boosting test coverage by 80%, and validated backend functionality through API and GraphQL testing",
+            "Recognized with Hudl\’s \"Respectfully Blunt\" intern award out of 50+ interns for consistently delivering candid, actionable feedback that strengthened team performance and product quality"
         ]
     },
 
