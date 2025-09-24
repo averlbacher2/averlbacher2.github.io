@@ -5,6 +5,8 @@ import ExperiencesContainer from './sections/ExperiencesContainer';
 import projectData from './data/projectData';
 import ProjectsContainer from './sections/ProjectsContainer';
 import GeometricBackground from './components/GeometricBackground';
+import InteractiveBrandName from './components/InteractiveBrandName';
+import SidebarNavigation from './components/SidebarNavigation';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
       <GeometricBackground />
       <header>
         <nav>
-          <p>Analise Erlbacher</p>
+          <InteractiveBrandName brandName="Analise Erlbacher"/>
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -22,6 +24,8 @@ function App() {
           </ul>
         </nav>
       </header>
+
+      <SidebarNavigation />
       <div className="main-content-wrapper">
         <div className="container">
           <div className="section-header">
@@ -49,7 +53,7 @@ function App() {
             </div>
           </section>
           <section id="experience">
-            <h2 className="section-heading">Experience</h2>
+            <h2 className="section-header">Experience</h2>
             <p>
               I am a current student at University of Nebraska-Lincoln, pursuing a
               double major in <em>Computer Science</em> and <em>Business Management</em> with an
@@ -58,18 +62,18 @@ function App() {
             <ExperiencesContainer experiences={experienceData} />
           </section>
           <section id="projects">
-            <h2 className="section-heading">Projects</h2>
+            <h2 className="section-header">Projects</h2>
             <ProjectsContainer projects={projectData} />
           </section>
           <section id="skills">
-            <h2 className="section-heading">Skills</h2>
+            <h2 className="section-header">Skills</h2>
             <p>
               Languages: Java, Python, Basic JavaScript, HTML, CSS Frameworks:
               React, Vite, Playwright Tools: Git, GitHub, Visual Studio Code, Figma
             </p>
           </section>
           <section id="contact">
-            <h2 className="section-heading">Contact</h2>
+            <h2 className="section-header">Contact</h2>
           </section>
         </div> 
       </div> 
