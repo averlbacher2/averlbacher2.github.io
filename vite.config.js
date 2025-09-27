@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // When deploying to GitHub Pages under a repo (https://<user>.github.io/personal-portfolio/)
   // set base to the repo name so asset URLs are correct.
-  base: '/personal-portfolio/',
+  base: '/',
 });
