@@ -9,7 +9,8 @@ export default function ProjectCard({
     descriptionSnippet,
     descriptionFull,
     skills,
-    projectImage
+    projectImage,
+    link
 }) {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
@@ -54,9 +55,11 @@ export default function ProjectCard({
                 </div>
             }
             <div className="project-links">
-                <a href="#" className="project-link github-link">
-                    View on GitHub
-                </a>
+                {link && (
+                    <a href={link} target="_blank" rel="noreferrer" className="project-link github-link">
+                        View on GitHub
+                    </a>
+                )}
             </div>
         </div>
     );

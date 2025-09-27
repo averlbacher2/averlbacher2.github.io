@@ -9,7 +9,8 @@ const projectData = [
             "Designed a responsive dashboard featuring dynamic progress charts and an activity log using Figma, React, TailwindCSS, and Recharts",
             "Working on adding a backend database for storing user information and creating an intuitive, responsive, and useful user experience"
         ],
-        skills: ["React", "Vite", "JavaScript", "CSS", "HTML", "GitHub"]
+        skills: ["React", "Vite", "JavaScript", "CSS", "HTML", "GitHub"],
+        link: 'https://github.com/averlbacher2/writing-accountability',
     },
     {
         id: 2,
@@ -22,7 +23,8 @@ const projectData = [
             "Implemented features for adding, deleting, and marking tasks as complete",
             "Focused on clean UI and responsive design for usability across devices"
         ],
-        skills: ["React", "JavaScript", "CSS", "HTML"]
+        skills: ["React", "JavaScript", "CSS", "HTML"],
+        link: 'https://github.com/averlbacher2/todo-list',
     }
 ]
 

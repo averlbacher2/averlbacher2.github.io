@@ -9,7 +9,7 @@ export default function ProjectsContainer({ projects }) {
                 return (
                     <ProjectCard 
                         key={project.id}
-                        id={project.id}
+                        projectId={project.id}
                         name={project.name}
                         startDate={project.startDate}
                         endDate={project.endDate}
@@ -17,6 +17,7 @@ export default function ProjectsContainer({ projects }) {
                         descriptionFull={project.descriptionFull}
                         skills={project.skills}
                         projectImage={project.projectImage}
+                        link={project.link}
                     />
                 );
             })}
