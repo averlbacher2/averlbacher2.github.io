@@ -7,6 +7,9 @@ import ProjectsContainer from './sections/ProjectsContainer';
 import GeometricBackground from './components/GeometricBackground';
 import InteractiveBrandName from './components/InteractiveBrandName';
 import SidebarNavigation from './components/SidebarNavigation';
+import skillsData from './data/skillsData';
+import SkillsSection from './sections/SkillsSection';
+import ContactSection from './sections/ContactSection';
 
 function App() {
   return (
@@ -65,15 +68,18 @@ function App() {
             <h2 className="section-header">Projects</h2>
             <ProjectsContainer projects={projectData} />
           </section>
-          <section id="skills">
+          <section id="skills" className="skills-section-container">
             <h2 className="section-header">Skills</h2>
-            <p>
-              Languages: Java, Python, Basic JavaScript, HTML, CSS Frameworks:
-              React, Vite, Playwright Tools: Git, GitHub, Visual Studio Code, Figma
-            </p>
+            <SkillsSection skills={skillsData} />
           </section>
           <section id="contact">
             <h2 className="section-header">Contact</h2>
+            <ContactSection 
+              email="analisee06@gmail.com" 
+              linkedin="https://www.linkedin.com/in/analise-erlbacher-b244a8324/" 
+              github="https://github.com/averlbacher2" 
+              formEndpoint={import.meta.env.VITE_FORMSPREE_ENDPOINT}
+            />
           </section>
         </div> 
       </div> 

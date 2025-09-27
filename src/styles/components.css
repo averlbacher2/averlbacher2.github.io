@@ -79,6 +79,7 @@
 .experience-card {
     border: 1px solid var(--turquoise);
     border-radius: 12px;
+    background-color: var(--component-background-translucent);
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -90,7 +91,7 @@
 
 .experience-card-thumbnail {
     color: var(--subtle-text);
-    background-color: transparent;
+    background-color: var(--component-background-translucent);
     border: 1px solid var(--cadet-gray-translucent);
     cursor: pointer;
 }
@@ -200,6 +201,7 @@
 .project-card {
     border: 1px solid var(--cadet-gray-translucent);
     border-radius: 12px;
+    background-color: var(--component-background-translucent);
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -267,21 +269,6 @@
     background: var(--charcoal);
 }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .projects-section {
-        padding: 2rem 1rem;
-    }
-}
-
 /* Floating Shapes Container */
 .floating-shapes {
     position: absolute;
@@ -294,14 +281,12 @@
     pointer-events: none;
 }
 
-/* Generic styles for ALL shapes */
 .shape {
     position: absolute;
     opacity: var(--shape-opacity);
     animation: float var(--float-duration) ease-in-out infinite;
 }
 
-/* Styles for specific shape types */
 .shape.circle {
     border-radius: 50%;
 }
@@ -321,7 +306,6 @@
     background-color: transparent;
 }
 
-/* Define your @keyframes float animation here */
 @keyframes float {
     0% {
         transform: translate(0, 0) rotate(0deg);
@@ -343,8 +327,6 @@
         transform: translate(0, 0) rotate(0deg);
     }
 }
-
-/* Update these styles for the typing effect */
 
 /* Core styles */
 .brand-container {
@@ -432,9 +414,201 @@
     box-shadow: 0 0 20px rgba(42, 157, 143, 0.3);
 }
 
+/* Contact Section Styles */
+.contact-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.contact-cards, .contact-form-card {
+    background: var(--component-background-translucent);
+    border: 1px solid var(--cadet-gray-translucent);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.35);
+    backdrop-filter: blur(10px);
+}
+
+.contact-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--lavender);
+}
+
+.contact-sub {
+    color: var(--cadet-gray);
+    margin-bottom: 1rem;
+}
+
+.contact-card {
+    padding: 0.8rem;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.01);
+    margin-bottom: 0.8rem;
+}
+
+.contact-card-label {
+    font-size: 0.85rem;
+    color: var(--cadet-gray);
+    margin-bottom: 0.25rem;
+}
+
+.contact-card-link {
+    color: var(--persian-green);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-form .input, .contact-form .textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.02);
+    color: var(--lavender);
+    outline: none;
+}
+
+.contact-form .input:focus, .contact-form .textarea:focus {
+    border-color: var(--persian-green);
+    box-shadow: 0 6px 18px rgba(42,157,143,0.08);
+}
+
+.contact-form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background: var(--persian-green);
+    color: var(--white);
+    border: none;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact-note {
+    margin-top: 1rem;
+    color: var(--cadet-gray);
+    font-size: 0.9rem;
+}
+
+.contact-success {
+    color: var(--persian-green);
+    font-weight: 600;
+}
+
+.contact-error {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Skills Section */
+.skills-section-container {
+    margin: 0 auto;
+    max-width: fit-content;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-category {
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--component-background-translucent);
+    border: 1px solid var(--cadet-gray-translucent);
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.skills-list {
+    gap: 0.5rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background: var(--columbia-blue);
+    color: #2d3748;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.skill-tag:hover {
+    background: var(--light-oxford-blue);
+    color: white;
+    border-color: var(--lavender);
+    transform: translateY(-1px);
+}
+
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .sidebar-nav {
         display: none;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+
+    .skills-container {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
