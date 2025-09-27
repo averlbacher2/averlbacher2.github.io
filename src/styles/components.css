@@ -79,6 +79,7 @@
 .experience-card {
     border: 1px solid var(--turquoise);
     border-radius: 12px;
+    background-color: var(--component-background-translucent);
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -90,7 +91,7 @@
 
 .experience-card-thumbnail {
     color: var(--subtle-text);
-    background-color: transparent;
+    background-color: var(--component-background-translucent);
     border: 1px solid var(--cadet-gray-translucent);
     cursor: pointer;
 }
@@ -200,6 +201,7 @@
 .project-card {
     border: 1px solid var(--cadet-gray-translucent);
     border-radius: 12px;
+    background-color: var(--component-background-translucent);
     overflow: hidden;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -412,19 +414,6 @@
     box-shadow: 0 0 20px rgba(42, 157, 143, 0.3);
 }
 
-/* Skills Section */
-.skills-section-container {
-    margin: 0 auto;
-    max-width: fit-content;
-    border-radius: 12px;
-    padding: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
-
-.skill-category {
-    backdrop-filter: blur(10px);
-}
-
 /* Contact Section Styles */
 .contact-section {
     max-width: 1000px;
@@ -531,6 +520,15 @@
     }
 }
 
+/* Skills Section */
+.skills-section-container {
+    margin: 0 auto;
+    max-width: fit-content;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -541,15 +539,10 @@
 .skill-category {
     border-radius: 8px;
     padding: 1.5rem;
+    background-color: var(--component-background-translucent);
     border: 1px solid var(--cadet-gray-translucent);
     transition: all 0.2s ease;
-}
-
-.skill-category :hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px var(--cadet-gray-translucent);
-    border-color: var(--persian-green);
-    background-color: var(--light-oxford-blue);
+    backdrop-filter: blur(10px);
 }
 
 .skills-list {
