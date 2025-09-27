@@ -267,21 +267,6 @@
     background: var(--charcoal);
 }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .projects-section {
-        padding: 2rem 1rem;
-    }
-}
-
 /* Floating Shapes Container */
 .floating-shapes {
     position: absolute;
@@ -294,14 +279,12 @@
     pointer-events: none;
 }
 
-/* Generic styles for ALL shapes */
 .shape {
     position: absolute;
     opacity: var(--shape-opacity);
     animation: float var(--float-duration) ease-in-out infinite;
 }
 
-/* Styles for specific shape types */
 .shape.circle {
     border-radius: 50%;
 }
@@ -321,7 +304,6 @@
     background-color: transparent;
 }
 
-/* Define your @keyframes float animation here */
 @keyframes float {
     0% {
         transform: translate(0, 0) rotate(0deg);
@@ -343,8 +325,6 @@
         transform: translate(0, 0) rotate(0deg);
     }
 }
-
-/* Update these styles for the typing effect */
 
 /* Core styles */
 .brand-container {
@@ -610,5 +590,32 @@
 @media (max-width: 768px) {
     .sidebar-nav {
         display: none;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .projects-section {
+        padding: 2rem 1rem;
+    }
+
+    .skills-container {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
