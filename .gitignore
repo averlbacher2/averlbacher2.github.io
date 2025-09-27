@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Build artifacts
+/build
+/dist
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# OS and Editor junk
+.DS_Store
+.vscode
