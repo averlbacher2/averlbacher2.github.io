@@ -10,6 +10,7 @@ import SidebarNavigation from './components/SidebarNavigation';
 import skillsData from './data/skillsData';
 import SkillsSection from './sections/SkillsSection';
 import ContactSection from './sections/ContactSection';
+import LandingSection from './sections/LandingSection';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <SidebarNavigation />
       <div className="main-content-wrapper">
         <div className="container">
+          <LandingSection />
           <div className="section-header">
             <h1>Hi, I'm Analise!</h1>
           </div>
