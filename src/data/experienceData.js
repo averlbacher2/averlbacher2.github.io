@@ -32,7 +32,7 @@ const experienceData = [
         startDate: "August 2025",
         endDate: "Present",
         description: [
-            "Guide 40+ students per semester in team-based entrepreneurship projects, mentoring them in customer discovery, prototyping, market research, and early customer acquisition",
+            "Guide 60+ students per semester in team-based entrepreneurship projects, mentoring them in customer discovery, prototyping, market research, and early customer acquisition",
             "Refine course curriculum by identifying improvement areas during weekly planning sessions",
             "Mentor students in weekly hands-on sessions by delivering individualized feedback on business models, team collaboration, and pitch development"
         ]
