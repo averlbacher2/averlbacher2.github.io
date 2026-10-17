@@ -521,16 +521,14 @@
 }
 
 /* Research Section */
-
-/* Research Section */
 .research-section {
     scroll-margin-top: 6rem;
+    padding: 2rem;
 }
 
 .research-container {
     display: grid;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .research-card {
@@ -547,7 +545,6 @@
 
 .research-card-title {
     margin: 0 0 1rem;
-    padding-bottom: 1rem;
     border-bottom: 1px solid var(--cadet-gray-translucent);
     font-size: 1.5rem;
     line-height: 1.4;

@@ -9,9 +9,9 @@ export default function ResearchSection() {
         >
             <div className="research-container">
                 {researchData.map((research) => {
-                    const [focus, ...contributions] =
+                    const[...focus] = research.focus;
+                    const [...contributions] =
                         research.descriptionFull;
-
                     return (
                         <article
                             key={research.id}

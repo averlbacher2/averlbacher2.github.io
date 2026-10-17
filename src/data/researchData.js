@@ -5,6 +5,7 @@ const researchData = [
         date: "August 2026 - Present",
         organization: "Jeffrey S. Raikes School Undergraduate Research Capstone",
         location: "Lincoln, NE",
+        focus: "A research project to improve the clinician-facing interpretability of EEG-based seizure prediction models and, consequently, further the translation of these models into clinical use.",
         descriptionFull: [
             "Investigating explainable AI methods to assess whether seizure forecasts rely on meaningful EEG patterns, recording artifacts, or unstable brain-network estimates",
             "Reviewing machine learning and interpretability research to test and develop interpretability of existing epilepsy models for clinicians",
