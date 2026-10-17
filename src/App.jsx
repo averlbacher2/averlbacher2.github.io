@@ -11,6 +11,7 @@ import skillsData from './data/skillsData';
 import SkillsSection from './sections/SkillsSection';
 import ContactSection from './sections/ContactSection';
 import ResearchSection from "./sections/ResearchSection";
+import strengthsData from './data/strengthsData';
 
 function App() {
   return (
@@ -47,8 +48,7 @@ function App() {
               <p className="subheading">Nice to meet you!</p>
               <h2 className="section-heading">About Me</h2>
               <p className="emphasis-text" style={{ paddingBottom: '20px', paddingTop: '20px' }}>
-                Hi there! I am a college student with a passion for software
-                development, web design, and entrepreneurship.
+                Hi there! I am a college student with a passion for team management, healthcare innovation, and entrepreneurship.
               </p>
               <p>
                 When I'm not hitting maximum laptop overdrive, you can find me writing,
@@ -71,7 +71,7 @@ function App() {
           </section>
           <section id="skills" className="skills-section-container">
             <h2 className="section-header">Skills</h2>
-            <SkillsSection skills={skillsData} />
+            <SkillsSection skills={skillsData} cliftonStrengths={strengthsData} />
           </section>
           <section id="contact">
             <h2 className="section-header">Contact</h2>
