@@ -10,6 +10,7 @@ import SidebarNavigation from './components/SidebarNavigation';
 import skillsData from './data/skillsData';
 import SkillsSection from './sections/SkillsSection';
 import ContactSection from './sections/ContactSection';
+import ResearchSection from "./sections/ResearchSection";
 
 function App() {
   return (
@@ -64,9 +65,9 @@ function App() {
             </p>
             <ExperiencesContainer experiences={experienceData} />
           </section>
-          <section id="projects">
-            <h2 className="section-header">Projects</h2>
-            <ProjectsContainer projects={projectData} />
+          <section id="research">
+            <h2 className="section-header">Research</h2>
+            <ResearchSection />
           </section>
           <section id="skills" className="skills-section-container">
             <h2 className="section-header">Skills</h2>
