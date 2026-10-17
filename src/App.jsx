@@ -10,6 +10,8 @@ import SidebarNavigation from './components/SidebarNavigation';
 import skillsData from './data/skillsData';
 import SkillsSection from './sections/SkillsSection';
 import ContactSection from './sections/ContactSection';
+import ResearchSection from "./sections/ResearchSection";
+import strengthsData from './data/strengthsData';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -38,16 +40,15 @@ function App() {
             <div>
               <img
                 className="photo"
-                src="/assets/square-headshot.png"
+                src="/assets/analise_on_mountain.png"
                 alt="Analise Erlbacher"
               />
             </div>
-            <div>
+            <div className="about-section-description">
               <p className="subheading">Nice to meet you!</p>
               <h2 className="section-heading">About Me</h2>
               <p className="emphasis-text" style={{ paddingBottom: '20px', paddingTop: '20px' }}>
-                Hi there! I am a college student with a passion for software
-                development, web design, and entrepreneurship.
+                Hi there! I am a college student with a passion for team management, healthcare innovation, and entrepreneurship.
               </p>
               <p>
                 When I'm not hitting maximum laptop overdrive, you can find me writing,
@@ -64,13 +65,13 @@ function App() {
             </p>
             <ExperiencesContainer experiences={experienceData} />
           </section>
-          <section id="projects">
-            <h2 className="section-header">Projects</h2>
-            <ProjectsContainer projects={projectData} />
+          <section id="research">
+            <h2 className="section-header">Research</h2>
+            <ResearchSection />
           </section>
           <section id="skills" className="skills-section-container">
             <h2 className="section-header">Skills</h2>
-            <SkillsSection skills={skillsData} />
+            <SkillsSection skills={skillsData} cliftonStrengths={strengthsData} />
           </section>
           <section id="contact">
             <h2 className="section-header">Contact</h2>

@@ -46,8 +46,14 @@ export default function ContactSection({ email = 'you@example.com', linkedin = '
     <div className="contact-section">
       <div className="contact-grid">
         <div className="contact-cards">
-          <h3 className="contact-title">Get in touch</h3>
+          <h3 className="contact-title">Get in touch!</h3>
           <p className="contact-sub">I'd love to hear about your project, internship, or a great coffee recommendation!</p>
+
+          <div className="contact-card">
+            <div className="contact-card-label">
+              Based in Omaha, NE (CST)
+            </div>
+          </div>
 
           <div className="contact-card">
             <div className="contact-card-label">Email</div>
@@ -57,11 +63,6 @@ export default function ContactSection({ email = 'you@example.com', linkedin = '
           <div className="contact-card">
             <div className="contact-card-label">LinkedIn</div>
             <a className="contact-card-link" href={linkedin} target="_blank" rel="noreferrer">View my LinkedIn profile</a>
-          </div>
-
-          <div className="contact-card">
-            <div className="contact-card-label">GitHub</div>
-            <a className="contact-card-link" href={github} target="_blank" rel="noreferrer">View my GitHub repos</a>
           </div>
         </div>
 
