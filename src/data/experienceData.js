@@ -1,6 +1,19 @@
 const experienceData = [
     {
-        id: 1,
+        id: 2,
+        title: "Business Operations and Data Analytics Intern",
+        company: "Scout Veterinary Solutions, Remote",
+        startDate: "February 2026",
+        endDate: "August 2026",
+        description: [
+            "Led the migration of 50+ customers from manual QuickBooks invoicing to automated Stripe payments, designing the customer outreach workflow, coordinating sales follow-ups, resolving technical issues and customer concerns, and reporting progress metrics to management",
+            "Built and executed a data cleaning and enrichment pipeline to increase lead coverage by 5x by importing 32K+ sales leads into Close CRM, organizing prospect information and scoring leads to prioritize sales outreach",
+            "Partnered with management to develop a proactive churn prevention strategy, compiling and analyzing customer departure patterns to inform a categorical churn risk score and actionable intervention plan"
+        ]
+    },
+
+    {
+        id: 3,
         title: "Software Quality Analyst Intern",
         company: "Hudl Sports Technology, Lincoln, NE",
         startDate: "May 2025",
@@ -13,7 +26,7 @@ const experienceData = [
     },
 
     {
-        id: 2,
+        id: 1,
         title: "Innovation Processes Teaching Assistant",
         company: "University of Nebraska-Lincoln, Lincoln, NE",
         startDate: "August 2025",
@@ -26,7 +39,7 @@ const experienceData = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Computer Systems & Operations Assistant",
         company: "RXSolutions Compounding Pharmacy, Papillion, NE",
         startDate: "April 2020",
