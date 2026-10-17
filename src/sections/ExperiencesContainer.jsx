@@ -11,7 +11,9 @@ export default function ExperiencesContainer({ experiences }) {
     <div className="experiences-container">
       <div className="experience-thumbnails">
         {/* Thumbnails here */}
-        {experiences.map((experience) => {
+        {[...experiences]
+        .sort((a, b) => a.id - b.id)
+        .map((experience) => {
           return (
             <h3
               key={experience.id}
