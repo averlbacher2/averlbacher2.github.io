@@ -13,4 +13,4 @@ const researchData = [
     },
 ]
 
-export default projectData;
+export default researchData;

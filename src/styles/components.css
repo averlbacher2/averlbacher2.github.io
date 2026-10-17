@@ -520,6 +520,127 @@
     }
 }
 
+/* Research Section */
+
+/* Research Section */
+.research-section {
+    scroll-margin-top: 6rem;
+}
+
+.research-container {
+    display: grid;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.research-card {
+    border: 1px solid var(--turquoise);
+    border-radius: 12px;
+    background-color: var(--component-background-translucent);
+    overflow: hidden;
+    position: relative;
+    padding: 1.5rem;
+    margin: 1em;
+    backdrop-filter: blur(10px);
+    color: var(--primary-text);
+}
+
+.research-card-title {
+    margin: 0 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--cadet-gray-translucent);
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--lavender);
+}
+
+.research-card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.research-card-organization {
+    flex: 1 1 18rem;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.research-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: var(--subtle-text);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: right;
+}
+
+.research-card-body {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.research-card-body > * {
+    min-width: 0;
+}
+
+.research-card-label {
+    margin: 0 0 0.75rem;
+    color: var(--turquoise);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.research-card-focus {
+    border-left: 2px solid var(--turquoise);
+    padding-left: 1rem;
+}
+
+.research-card-description {
+    margin: 0;
+    line-height: 1.8;
+}
+
+.research-card-contributions {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style-type: circle;
+    color: var(--subtle-text);
+    line-height: 1.8;
+}
+
+.research-card-contributions li + li {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .research-card {
+        margin: 0;
+    }
+
+    .research-card-details {
+        flex-direction: column;
+    }
+
+    .research-card-organization {
+        flex: auto;
+    }
+
+    .research-card-meta {
+        text-align: left;
+    }
+
+    .research-card-body {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Skills Section */
 .skills-section-container {
     margin: 0 auto;
