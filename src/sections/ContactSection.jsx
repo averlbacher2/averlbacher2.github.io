@@ -58,11 +58,6 @@ export default function ContactSection({ email = 'you@example.com', linkedin = '
             <div className="contact-card-label">LinkedIn</div>
             <a className="contact-card-link" href={linkedin} target="_blank" rel="noreferrer">View my LinkedIn profile</a>
           </div>
-
-          <div className="contact-card">
-            <div className="contact-card-label">GitHub</div>
-            <a className="contact-card-link" href={github} target="_blank" rel="noreferrer">View my GitHub repos</a>
-          </div>
         </div>
 
         <div className="contact-form-card">
