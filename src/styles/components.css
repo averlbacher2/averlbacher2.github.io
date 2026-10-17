@@ -535,7 +535,7 @@
 }
 
 .research-card {
-    border: 1px solid var(--turquoise);
+    border: 1px solid var(--cadet-gray-translucent);
     border-radius: 12px;
     background-color: var(--component-background-translucent);
     overflow: hidden;
@@ -647,7 +647,7 @@
     max-width: fit-content;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    gap: 2rem;
 }
 
 .skills-grid {
@@ -655,6 +655,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
+    padding: 2rem;
 }
 
 .skill-category {
@@ -693,8 +694,10 @@
 }
 
 /* CliftonStrengths */
+
 .strengths-section {
-    margin-top: 3rem;
+    padding: 2rem;
+    scroll-margin-top: 6rem;
 }
 
 .strengths-heading {
@@ -709,14 +712,13 @@
 }
 
 .strength-carousel {
-    border: 1px solid var(--turquoise);
+    border: 1px solid var(--cadet-gray-translucent);
     border-radius: 12px;
     background: var(--component-background-translucent);
     backdrop-filter: blur(10px);
     overflow: hidden;
 }
 
-/* Reserved space keeps the rest of the page stationary. */
 .strength-slide-space {
     height: 260px;
     overflow-y: auto;
