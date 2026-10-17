@@ -40,11 +40,11 @@ function App() {
             <div>
               <img
                 className="photo"
-                src="/assets/square-headshot.png"
+                src="/assets/analise_on_mountain.png"
                 alt="Analise Erlbacher"
               />
             </div>
-            <div>
+            <div className="about-section-description">
               <p className="subheading">Nice to meet you!</p>
               <h2 className="section-heading">About Me</h2>
               <p className="emphasis-text" style={{ paddingBottom: '20px', paddingTop: '20px' }}>
